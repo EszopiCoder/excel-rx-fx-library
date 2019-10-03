@@ -13,8 +13,12 @@ Height and Weight
 - BSA (Du Bois and Mosteller)
 - Ideal Body Weight (Devine)
 - Adjusted Body Weight (Devine)
+- Ideal Body Weight (under 60 inches)
 
 Renal
 - Cockcroft-Gault Creatinine Clearance
 - MDRD
 - CKDEPI
+
+Kinetics
+- Coming soon!
