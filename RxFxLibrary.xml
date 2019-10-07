@@ -1,0 +1,34 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+   <ribbon>
+      <tabs>
+         <tab idMso="TabFormulas">
+            <group id="RxFxLib" label="Rx Function Library">
+               <gallery id="RxFx"
+                   label="Rx Functions" columns="1"
+                   imageMso = "GroupFunctionLibrary"
+                   getItemCount = "RxFx_getItemCount"
+                   getItemLabel = "RxFx_getItemLabel"
+                   getItemScreentip = "RxFx_getItemScreentip"
+                   getItemSupertip = "RxFx_getItemSupertip"
+                   onAction = "RxFx_Click"
+                   showItemLabel = "true"
+                   size="large">
+                  <button id="insertFx"
+                     imageMso = "GroupFunctionLibrary"
+                     label = "Insert Function"
+                     screentip="Insert Function (Shift+F3)"
+                     supertip = "Work with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values."
+                     onAction="insertFx_Click"/>
+               </gallery>
+               <button id="getInfo"
+                   imageMso = "ARMPreviewButton"
+                   label = "Info"
+                   screentip="Information"
+                   supertip = "Return contact information."
+                   onAction = "getInfo_Click"
+                   size="large"/>
+            </group>
+         </tab>
+      </tabs>
+   </ribbon>
+</customUI>
