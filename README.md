@@ -24,5 +24,6 @@ Diabetes (Coming soon!)
 - Correction factor
 - Carbohydrate dosing
 
-Kinetics
-- Coming soon!
+Kinetics (Coming soon!)
+- Vancomycin dosing
+- Aminoglycoside dosing
