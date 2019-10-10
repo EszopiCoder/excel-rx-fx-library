@@ -33,7 +33,7 @@ Public Function RxCalc_CrCl(ByVal Age As Byte, _
     ByVal Weight As Single, ByVal sCr As Single, _
     ByVal Female As Boolean, _
     Optional ByVal Metric As Boolean = True) As Variant
-Attribute RxCalc_CrCl.VB_Description = "Calculate creatinine clearance (CrCl).\r\nFormula: CrCl = [(140 - Age) × Weight] / (72 × sCr) × 0.85 [if female]\r\nOutput: CrCl [mL/min]"
+Attribute RxCalc_CrCl.VB_Description = "Calculate creatinine clearance (CrCl).\r\nFormula: CrCl = [(140 - Age) Ã— Weight] / (72 Ã— sCr) Ã— 0.85 [if female]\r\nOutput: CrCl [mL/min]"
 Attribute RxCalc_CrCl.VB_ProcData.VB_Invoke_Func = " \n20"
     
     ' Based off of Cockcroft-Gault equation
@@ -104,7 +104,7 @@ End Function
 Public Function RxCalc_GFR_CKDEPI(ByVal Age As Integer, _
     ByVal sCr As Single, ByVal Female As Boolean, _
     Optional ByVal Black As Boolean = False) As Variant
-Attribute RxCalc_GFR_CKDEPI.VB_Description = "Calculate GFR with CKDEPI formula.\r\nFormula: eGFR = 141 × min(sCr/k, 1)^a × max(sCr/k, 1)^-1.209 × 0.993^Age × 1.018 [if female] × 1.159 [if Black]\r\nOutput: eGFR [mL/min/1.73m²]"
+Attribute RxCalc_GFR_CKDEPI.VB_Description = "Calculate GFR with CKDEPI formula.\r\nFormula: eGFR = 141 Ã— min(sCr/k, 1)^a Ã— max(sCr/k, 1)^-1.209 Ã— 0.993^Age Ã— 1.018 [if female] Ã— 1.159 [if Black]\r\nOutput: eGFR [mL/min/1.73mÂ²]"
 Attribute RxCalc_GFR_CKDEPI.VB_ProcData.VB_Invoke_Func = " \n20"
 
     ' Based off of CKDEPI equation
@@ -166,7 +166,7 @@ End Function
 Public Function RxCalc_GFR_MDRD(ByVal Age As Integer, _
     ByVal sCr As Single, ByVal Female As Boolean, _
     Optional ByVal Black As Boolean = False) As Variant
-Attribute RxCalc_GFR_MDRD.VB_Description = "Calculate GFR with MDRD formula.\r\nFormula: eGFR = 175 × sCr^-1.154 × Age^-0.203 × 0.742 [if female] × 1.212 [if Black]\r\nOutput: eGFR [mL/min/1.73m²]"
+Attribute RxCalc_GFR_MDRD.VB_Description = "Calculate GFR with MDRD formula.\r\nFormula: eGFR = 175 Ã— sCr^-1.154 Ã— Age^-0.203 Ã— 0.742 [if female] Ã— 1.212 [if Black]\r\nOutput: eGFR [mL/min/1.73mÂ²]"
 Attribute RxCalc_GFR_MDRD.VB_ProcData.VB_Invoke_Func = " \n20"
     
     ' Based off of MDRD equation
