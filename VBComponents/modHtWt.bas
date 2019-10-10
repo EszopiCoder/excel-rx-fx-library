@@ -30,7 +30,7 @@ End Sub
 Public Function RxCalc_BMI(ByVal Height As String, _
     ByVal Weight As Single, _
     Optional ByVal Metric As Boolean = True) As Variant
-Attribute RxCalc_BMI.VB_Description = "Calculate body mass index (BMI).\r\nFormula: BMI = Weight / Height²\r\nOutput: BMI [kg/m²]"
+Attribute RxCalc_BMI.VB_Description = "Calculate body mass index (BMI).\r\nFormula: BMI = Weight / HeightÂ²\r\nOutput: BMI [kg/mÂ²]"
 Attribute RxCalc_BMI.VB_ProcData.VB_Invoke_Func = " \n20"
     
     ' Based off of BMI formula
@@ -107,7 +107,7 @@ End Function
 Public Function RxCalc_BSA_DuBois(ByVal Height As String, _
     ByVal Weight As Single, _
     Optional ByVal Metric As Boolean = True) As Variant
-Attribute RxCalc_BSA_DuBois.VB_Description = "Calculate body surface area (BSA) with Du Bois formula.\r\nFormula: BSA = 0.007184 × Weight^0.425 × Height^0.725\r\nOutput: BSA [m²]"
+Attribute RxCalc_BSA_DuBois.VB_Description = "Calculate body surface area (BSA) with Du Bois formula.\r\nFormula: BSA = 0.007184 Ã— Weight^0.425 Ã— Height^0.725\r\nOutput: BSA [mÂ²]"
 Attribute RxCalc_BSA_DuBois.VB_ProcData.VB_Invoke_Func = " \n20"
     
     ' Based off of Du Bois Formula
@@ -159,7 +159,7 @@ End Function
 Public Function RxCalc_BSA_Mosteller(ByVal Height As String, _
     ByVal Weight As Single, _
     Optional ByVal Metric As Boolean = True) As Variant
-Attribute RxCalc_BSA_Mosteller.VB_Description = "Calculate body surface area (BSA) with Mosteller formula.\r\nFormula: BSA = Sqr(Height × Weight) / 60\r\nOutput: BSA [m²]"
+Attribute RxCalc_BSA_Mosteller.VB_Description = "Calculate body surface area (BSA) with Mosteller formula.\r\nFormula: BSA = Sqr(Height Ã— Weight) / 60\r\nOutput: BSA [mÂ²]"
 Attribute RxCalc_BSA_Mosteller.VB_ProcData.VB_Invoke_Func = " \n20"
 
     ' Based off of Mosteller formula
@@ -451,7 +451,7 @@ End Function
 Public Function RxCalc_IBW_Hume(ByVal Height As String, _
     ByVal Weight As Single, ByVal Female As Boolean, _
     Optional ByVal Metric As Boolean = True) As Variant
-Attribute RxCalc_IBW_Hume.VB_Description = "Calculate ideal body weight (IBW) under 60 inches.\r\nFormula: IBW (Male) = (0.3281 × Weight) + (0.33939 × Height) - 29.5336\r\nFormula: IBW (Female) = (0.29569 × Weight) + (0.41813 × Height) - 43.2933\r\nOutput: IBW [kg]"
+Attribute RxCalc_IBW_Hume.VB_Description = "Calculate ideal body weight (IBW) under 60 inches.\r\nFormula: IBW (Male) = (0.3281 Ã— Weight) + (0.33939 Ã— Height) - 29.5336\r\nFormula: IBW (Female) = (0.29569 Ã— Weight) + (0.41813 Ã— Height) - 43.2933\r\nOutput: IBW [kg]"
 Attribute RxCalc_IBW_Hume.VB_ProcData.VB_Invoke_Func = " \n20"
 
     ' Use only if Height < 60 inches
