@@ -39,6 +39,12 @@ Dim RxFxList(0 To 12) As Variant
 '</customUI>
 '*********************************XML CODE*********************************
 
+Private Sub AddInMenuProperties()
+    ' Custom function for changing file properties (not used during run time)
+    ActiveWorkbook.BuiltinDocumentProperties("Title").Value = "Rx Function Library"
+    ActiveWorkbook.BuiltinDocumentProperties("Comments").Value = "Function library for custom pharmacy equations"
+End Sub
+
 Sub Auto_Open()
 
     ' Populate RxFxList
