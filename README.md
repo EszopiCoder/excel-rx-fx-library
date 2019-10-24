@@ -23,6 +23,10 @@ If you have any questions or find any bugs, please contact EszopiCoder at pharm.
 **Diabetes**
 - Correction Factor Dosing
 - Carbohydrate Counting Dosing
+
+**Kinetics (Coming soon!)**
+- Vancomycin dosing
+- Aminoglycoside dosing
 ## Height and Weight Functions:
 ### Body Mass Index (BMI)
 **Function**
