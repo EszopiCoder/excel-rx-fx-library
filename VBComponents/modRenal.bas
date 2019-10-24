@@ -108,7 +108,7 @@ Attribute RxCalc_GFR_CKDEPI.VB_Description = "Calculate GFR with CKDEPI formula.
 Attribute RxCalc_GFR_CKDEPI.VB_ProcData.VB_Invoke_Func = " \n20"
 
     ' Based off of CKDEPI equation
-    '   eGFR = 141 * min(sCr/k, 1)^a * max(sCr/k, 1)^-1.209 * 0.993^Age * 1.018 [if female] * 1.159 [if Black]"
+    '   eGFR = 141 * min(sCr/k, 1)^a * max(sCr/k, 1)^-1.209 * 0.993^Age * 1.018 [if female] * 1.159 [if Black]
     ' Input(s):
     '   sCr = mg/dL
     '   Age = years
@@ -170,7 +170,7 @@ Attribute RxCalc_GFR_MDRD.VB_Description = "Calculate GFR with MDRD formula.\r\n
 Attribute RxCalc_GFR_MDRD.VB_ProcData.VB_Invoke_Func = " \n20"
     
     ' Based off of MDRD equation
-    '   eGFR = 175 * sCr^-1.154 * Age^-0.203 * (0.742 if female, 1.212 if black)
+    '   eGFR = 175 * sCr^-1.154 * Age^-0.203 * 0.742 [if female] * 1.212 [if black]
     ' Input(s):
     '   sCr = mg/dL
     '   Age = years
