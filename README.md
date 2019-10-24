@@ -45,6 +45,8 @@ Variant
 
 
 BMI in kg/m^2 of person given height and weight.
+
+---
 #### Body Surface Area (BSA)
 **Functions**
 - `RxCalc_BSA_DuBois()`
@@ -90,6 +92,8 @@ Variant
 
 
 BSA in meters^2 of the person given height and weight.
+
+---
 #### Ideal Body Weight; over 60 inches (IBW)
 **Function**
 - `RxCalc_IBW()`
@@ -131,6 +135,8 @@ Variant
 
 
 IBW in kilograms of person given height and sex.
+
+---
 #### Adjusted Body Weight; obese (AdjBW)
 **Function**
 - `RxCalc_AdjBW()`
@@ -175,6 +181,8 @@ Variant
 
 
 AdjBW in kilograms of person given height, weight, and sex. Only use for obese patients.
+
+---
 #### Ideal Body Weight; under 60 inches (IBW)
 **Functions**
 - `RxCalc_IBW_Intuitive()`
@@ -233,6 +241,7 @@ Variant
 
 IBW in kilograms of person given height and sex. Weight required for Hume method.
 
+---
 ### Renal
 #### Cockcroft-Gault Creatinine Clearance (CrCl)
 **Function**
@@ -285,6 +294,8 @@ Variant
 
 
 CrCl in mL/min of person given age, weight, serum creatinine, and sex.
+
+---
 #### Modification of Diet and Renal Disease Study (MDRD)
 **Function**
 - `RxCalc_GFR_MDRD()`
@@ -330,6 +341,8 @@ Variant
 
 
 eGFR in mL/min/1.73m^2 of person given age, serum creatinine, sex, and race.
+
+---
 #### Chronic Kidney Disease Epidemiology Collaboration (CKDEPI)
 **Function**
 - `RxCalc_GFR_CKDEPI()`
@@ -375,6 +388,8 @@ Variant
 
 
 eGFR in mL/min/1.73m^2 of person given age, serum creatinine, sex, and race.
+
+---
 ### Diabetes
 #### Correction factor dosing
 **Function**
@@ -427,6 +442,8 @@ Variant
 
 
 Insulin dose in units. Add to set dose or carb counting dose.
+
+---
 #### Carbohydrate counting dosing
 **Function**
 - `RxCalc_CarbCounting()`
@@ -466,6 +483,7 @@ Variant
 
 Insulin dose in units. Add to correction factor dose.
 
+---
 ### Kinetics (Coming soon!)
 - Vancomycin dosing
 - Aminoglycoside dosing
