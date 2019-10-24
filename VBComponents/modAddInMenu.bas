@@ -1,6 +1,6 @@
 Attribute VB_Name = "modAddInMenu"
 Option Explicit
-Dim RxFxList(0 To 12) As Variant
+Dim RxFxList(0 To 14) As Variant
 
 '*********************************XML CODE*********************************
 '<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
@@ -61,6 +61,8 @@ Sub Auto_Open()
     RxFxList(10) = "RxCalc_GFR_CKDEPI(Age,sCr,Female,Black)"
     RxFxList(11) = "RxCalc_GFR_MDRD(Age,sCr,Female,Black)"
     RxFxList(12) = "RxCalc_GFR_Class(eGFR)"
+    RxFxList(13) = "RxCalc_CorrectionFactor(TDD,Actual BG,Target BG,RapidIns)"
+    RxFxList(14) = "RxCalc_CarbCount(TDD,Carbs)"
     
 End Sub
 
@@ -106,7 +108,9 @@ Sub RxFx_getItemSupertip(control As IRibbonControl, index As Integer, ByRef retu
           "Return the Cockcroft-Gault creatinine clearance of a person.", _
           "Return the eGFR of a person (CKDEPI equation).", _
           "Return the eGFR of a person (MDRD equation).", _
-          "Return the eGFR class of a person.")
+          "Return the eGFR class of a person.", _
+          "Return the correction factor insulin dose.", _
+          "Return the carb counting insulin dose.")
 
     On Error Resume Next
     returnedVal = Supertip(index)
