@@ -23,7 +23,7 @@ If you have any questions or find any bugs, please contact EszopiCoder at pharm.
 **Diabetes**
 - Correction Factor Dosing
 - Carbohydrate Counting Dosing
-## Height and Weight
+## Height and Weight Functions
 ### Body Mass Index (BMI)
 **Function**
 - `RxCalc_BMI()`
@@ -256,7 +256,7 @@ Variant
 
 
 IBW in kilograms of person given height and sex. Weight required for Hume method.
-## Renal
+## Renal Functions
 ### Cockcroft-Gault Creatinine Clearance (CrCl)
 **Function**
 - `RxCalc_CrCl()`
@@ -402,7 +402,7 @@ Variant
 
 
 eGFR in mL/min/1.73m^2 of person given age, serum creatinine, sex, and race.
-## Diabetes
+## Diabetes Functions
 ### Correction factor dosing
 **Function**
 - `RxCalc_CorrectionFactor()`
