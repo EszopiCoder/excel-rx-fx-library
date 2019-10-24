@@ -31,11 +31,17 @@ BMI in kg/m^2 of person given height and weight.
 **Functions**
 - `RxCalc_BSA_DuBois()`
 - `RxCalc_BSA_Mosteller()`
+
+
 **Equations**
 Du Bois Formula:
 - BSA = 0.007184 * Weight^0.425 * Height^0.725
+
+
 Mosteller Formula:
 - BSA = (Height * Weight)^0.5 / 60
+
+
 **Parameters**
 `Height` String
 Required. Height of person in inches or centimeters. Height in inches may be formatted as 5'10".
@@ -49,10 +55,14 @@ BSA in meters^2 of the person given height and weight.
 #### Ideal Body Weight; over 60 inches (IBW)
 **Function**
 - `RxCalc_IBW()`
+
+
 **Equations**
 Devine Formula:
 - IBW (Male) = 50kg + 2.3kg for each inch above 60 inches
 - IBW (Female) = 45.5kg + 2.3kg for each inch above 60 inches
+
+
 **Parameters**
 `Height` String
 Required. Height of person in inches or centimeters. Height in inches may be formatted as 5'10".
@@ -66,9 +76,13 @@ IBW in kilograms of person given height and sex.
 #### Adjusted Body Weight; obese (AdjBW)
 **Function**
 - `RxCalc_AdjBW()`
+
+
 **Equations**
 Devine Formula:
 - AdjBW = IBW + 0.4*(Actual Body Weight - IBW)
+
+
 **Parameters**
 `Height` String
 Required. Height of person in inches or centimeters. Height in inches may be formatted as 5'10".
@@ -86,16 +100,24 @@ AdjBW in kilograms of person given height, weight, and sex. Only use for obese p
 - `RxCalc_IBW_Intuitive()`
 - `RxCalc_IBW_Baseline()`
 - `RxCalc_IBW_Hume()`
+
+
 **Equations**
 Intuitive Formula:
 - IBW (Male) = 50kg - 2.3kg for each inch below 60 inches
 - IBW (Female) = 45.5kg - 2.3kg for each inch below 60 inches
+
+
 Baseline Formula:
 - IBW (Male) = 50kg - 0.833kg for each inch below 60 inches
 - IBW (Female) = 45.5kg - 0.758kg for each inch below 60 inches
+
+
 Hume Method:
 - IBW (Male) = (0.3281 x Weight in kg) + (0.33939 x Height in cm) - 29.5336
 - IBW (Female) = (0.29569 x Weight in kg) + (0.41813 x Height in cm) - 43.2933
+
+
 **Parameters**
 `Height` String
 Required. Height of person in inches or centimeters. Height in inches may be formatted as 5'10".
@@ -113,6 +135,8 @@ IBW in kilograms of person given height and sex. Weight required for Hume method
 #### Cockcroft-Gault Creatinine Clearance (CrCl)
 **Function**
 - `RxCalc_CrCl()`
+
+
 **Equation**
 CrCl = ((140 - Age) * Weight) / (72 * sCr)
 **Parameters**
@@ -132,6 +156,8 @@ CrCl in mL/min of person given age, weight, serum creatinine, and sex.
 #### Modification of Diet and Renal Disease Study (MDRD)
 **Function**
 - `RxCalc_GFR_MDRD()`
+
+
 **Equation (4-variable)**
 eGFR = 175 * sCr^-1.154 * Age^-0.203 * 0.742 (if female) * 1.212 (if black)
 **Parameters**
@@ -168,6 +194,8 @@ eGFR in mL/min/1.73m^2 of person given age, serum creatinine, sex, and race.
 #### Correction factor dosing
 **Function**
 - `RxCalc_CorrectionFactor()`
+
+
 **Equation**
 Insulin Sensitivity (IS):
 - IS (Rapid insulin) = 1800 / Total Daily Dose
@@ -189,6 +217,8 @@ Insulin dose in units. Add to set dose or carb counting dose.
 #### Carbohydrate counting dosing
 **Function**
 - `RxCalc_CarbCounting()`
+
+
 **Equation**
 Carb:Insulin Ratio (C:I): 
 - C:I = 500 / Total Daily Dose
