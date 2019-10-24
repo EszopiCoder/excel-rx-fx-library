@@ -23,13 +23,13 @@ Private Sub Workbook_Open()
     Set App = Application
 End Sub
 
-Sub Workbook_AddinInstall()
+Private Sub Workbook_AddinInstall()
     MsgBox "Thank you for installing the Rx Fx Library." & vbNewLine & _
         "This is an open source project created by EszopiCoder." & vbNewLine & _
         "(https://github.com/EszopiCoder/excel-rx-fx-library)", vbInformation
 End Sub
 
-Sub Workbook_AddinUninstall()
+Private Sub Workbook_AddinUninstall()
     MsgBox "Sorry to hear you will no longer be using the 'Rx Fx Library'." & vbNewLine & _
         "Please send suggestions for improvement to pharm.coder@gmail.com", vbInformation
 End Sub
