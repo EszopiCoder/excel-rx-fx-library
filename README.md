@@ -44,13 +44,27 @@ Mosteller Formula:
 
 **Parameters**
 `Height` String
+
+
 Required. Height of person in inches or centimeters. Height in inches may be formatted as 5'10".
+
+
 `Weight` Single
+
+
 Required. Weight of person in pounds or kilograms.
+
+
 `Metric` Boolean
+
+
 Optional. Measurement units of height and weight. True=Metric (Default); False=US
+
+
 **Returns**
 Variant
+
+
 BSA in meters^2 of the person given height and weight.
 #### Ideal Body Weight; over 60 inches (IBW)
 **Function**
