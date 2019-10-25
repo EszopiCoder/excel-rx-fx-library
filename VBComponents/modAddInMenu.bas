@@ -74,6 +74,12 @@ Sub getInfo_Click(control As IRibbonControl)
         
 End Sub
 
+Sub updateFx_Click(control As IRibbonControl)
+
+    Call UpdateFx
+
+End Sub
+
 Sub RxFx_getItemCount(control As IRibbonControl, ByRef returnedVal)
     ' Return the number of functions in the array
     returnedVal = UBound(RxFxList) - LBound(RxFxList) + 1
