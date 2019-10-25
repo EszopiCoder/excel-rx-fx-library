@@ -51,8 +51,11 @@ Public Sub UpdateFx()
     Call FastMode(False)
     
     ' Exit if there are no changes
-    If cellCount = 0 Then Exit Sub
-    
+    If cellCount = 0 Then
+        MsgBox ActiveWorkbook.Name & " is up to date.", vbInformation    
+        Exit Sub
+    End If
+
     ' Option to save change log to text file
     saveLog = MsgBox(cellCount & " cell(s) updated" & vbNewLine & _
         "Would you like to save a log of the changes?", vbYesNo)
