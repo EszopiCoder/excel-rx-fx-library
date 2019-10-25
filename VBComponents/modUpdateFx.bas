@@ -19,8 +19,8 @@ Public Sub UpdateFx()
 
     ' Arrays to change/update formulas
     ' Change these on each release if necessary
-    findArray = Array("sin", "tan")
-    replaceArray = Array("cos", "cot")
+    findArray = Array("test10", "test20")
+    replaceArray = Array("test11", "test21")
     strUpdateLog = "Cell Range" & vbTab & "Change Log"
     
     ' Turn on fast mode
