@@ -32,6 +32,13 @@ Dim RxFxList(0 To 14) As Variant
 '                   supertip = "Return contact information."
 '                   onAction = "getInfo_Click"
 '                   size="large"/>
+'               <button id="updateFx"
+'                   imageMso = "ConnectedToolSyncMenu"
+'                   label = "Update Fx"
+'                   screentip="Update Functions"
+'                   supertip = "Update all functions in current workbook."
+'                   onAction = "updateFx_Click"
+'                   size="large"/>
 '            </group>
 '         </tab>
 '      </tabs>
