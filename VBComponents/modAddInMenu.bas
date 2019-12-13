@@ -55,21 +55,21 @@ End Sub
 Sub Auto_Open()
 
     ' Populate RxFxList
-    RxFxList(0) = "RxCalc_AdjBW(Height,Weight,Female,Metric)"
-    RxFxList(1) = "RxCalc_IBW(Height,Female,Metric)"
-    RxFxList(2) = "RxCalc_IBW_Intuitive(Height,Female,Metric)"
-    RxFxList(3) = "RxCalc_IBW_Baseline(Height,Female,Metric)"
-    RxFxList(4) = "RxCalc_IBW_Hume(Height,Weight,Female,Metric)"
-    RxFxList(5) = "RxCalc_BMI(Height,Weight)"
-    RxFxList(6) = "RxCalc_BMI_Class(BMI)"
-    RxFxList(7) = "RxCalc_BSA_DuBois(Height,Weight,Metric)"
-    RxFxList(8) = "RxCalc_BSA_Mosteller(Height,Weight,Metric)"
-    RxFxList(9) = "RxCalc_CrCl(Age,Weight,sCr,Female,Metric)"
-    RxFxList(10) = "RxCalc_GFR_CKDEPI(Age,sCr,Female,Black)"
-    RxFxList(11) = "RxCalc_GFR_MDRD(Age,sCr,Female,Black)"
-    RxFxList(12) = "RxCalc_GFR_Class(eGFR)"
-    RxFxList(13) = "RxCalc_CorrectionFactor(TDD,Actual BG,Target BG,RapidIns)"
-    RxFxList(14) = "RxCalc_CarbCount(TDD,Carbs)"
+    RxFxList(0) = "RxCalc_AdjBW()"
+    RxFxList(1) = "RxCalc_IBW()"
+    RxFxList(2) = "RxCalc_IBW_Intuitive()"
+    RxFxList(3) = "RxCalc_IBW_Baseline()"
+    RxFxList(4) = "RxCalc_IBW_Hume()"
+    RxFxList(5) = "RxCalc_BMI()"
+    RxFxList(6) = "RxCalc_BMI_Class()"
+    RxFxList(7) = "RxCalc_BSA_DuBois()"
+    RxFxList(8) = "RxCalc_BSA_Mosteller()"
+    RxFxList(9) = "RxCalc_CrCl()"
+    RxFxList(10) = "RxCalc_GFR_CKDEPI()"
+    RxFxList(11) = "RxCalc_GFR_MDRD()"
+    RxFxList(12) = "RxCalc_GFR_Class()"
+    RxFxList(13) = "RxCalc_CorrectionFactor()"
+    RxFxList(14) = "RxCalc_CarbCounting()"
     
 End Sub
 
@@ -143,6 +143,10 @@ Sub RxFx_Click(control As IRibbonControl, id As String, index As Integer)
         ActiveCell.Formula = ActiveCell.Formula & "+" & RxFxList(index)
     Else
         ActiveCell.Formula = "=" & RxFxList(index)
+    End If
+    ' Open function wizard dialog. Clear cell if user hits cancel button.
+    If Application.Dialogs(xlDialogFunctionWizard).Show = False Then
+        ActiveCell.Formula = ""
     End If
     On Error GoTo 0
 End Sub
