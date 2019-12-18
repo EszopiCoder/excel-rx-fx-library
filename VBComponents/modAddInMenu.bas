@@ -25,19 +25,19 @@ Dim RxFxList(0 To 14) As Variant
 '                    supertip = "Work with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values."
 '                    onAction="insertFx_Click"/>
 '               </gallery>
-'               <button id="getInfo"
-'                   imageMso = "ARMPreviewButton"
-'                   label = "Info"
-'                   screentip="Information"
-'                   supertip = "Return contact information."
-'                   onAction = "getInfo_Click"
-'                   size="large"/>
 '               <button id="updateFx"
 '                   imageMso = "ConnectedToolSyncMenu"
 '                   label = "Update Fx"
 '                   screentip="Update Functions"
 '                   supertip = "Update all functions in current workbook."
 '                   onAction = "updateFx_Click"
+'                   size="large"/>
+'               <button id="getHelp"
+'                   imageMso = "Help"
+'                   label = "Help"
+'                   screentip="Help"
+'                   supertip = "Open link to webpage."
+'                   onAction = "getHelp_Click"
 '                   size="large"/>
 '            </group>
 '         </tab>
@@ -73,11 +73,17 @@ Sub Auto_Open()
     
 End Sub
 
-Sub getInfo_Click(control As IRibbonControl)
+Sub getHelp_Click(control As IRibbonControl)
 
-    MsgBox "The 'Rx Fx Library' was created by EszopiCoder, PharmD Student." & vbNewLine & _
-        "Open Source (https://github.com/EszopiCoder/excel-rx-fx-library)" & vbNewLine & _
-        "Please report bugs and send suggestions to pharm.coder@gmail.com", vbInformation
+    Dim URL As String
+    
+    URL = "https://github.com/EszopiCoder/excel-rx-fx-library"
+    
+    If MsgBox("You are leaving Microsoft Word to the following website: " & URL & _
+    vbNewLine & vbNewLine & "Would you like to proceed?", _
+    vbExclamation + vbYesNo) = vbNo Then Exit Sub
+    
+    ActiveDocument.FollowHyperlink URL
         
 End Sub
 
