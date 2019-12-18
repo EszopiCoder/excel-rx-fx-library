@@ -83,7 +83,7 @@ Sub getHelp_Click(control As IRibbonControl)
     vbNewLine & vbNewLine & "Would you like to proceed?", _
     vbExclamation + vbYesNo) = vbNo Then Exit Sub
     
-    ActiveDocument.FollowHyperlink URL
+    ActiveWorkbook.FollowHyperlink URL
         
 End Sub
 
