@@ -20,19 +20,19 @@
                      supertip = "Work with the formula in the current cell. You can easily pick functions to use and get help on how to fill out the input values."
                      onAction="insertFx_Click"/>
                </gallery>
-               <button id="getInfo"
-                   imageMso = "ARMPreviewButton"
-                   label = "Info"
-                   screentip="Information"
-                   supertip = "Return contact information."
-                   onAction = "getInfo_Click"
-                   size="large"/>
                <button id="updateFx"
                    imageMso = "ConnectedToolSyncMenu"
                    label = "Update Fx"
                    screentip="Update Functions"
                    supertip = "Update all functions in current workbook."
                    onAction = "updateFx_Click"
+                   size="large"/>
+               <button id="getHelp"
+                   imageMso = "Help"
+                   label = "Help"
+                   screentip="Help"
+                   supertip = "Open link to webpage."
+                   onAction = "getHelp_Click"
                    size="large"/>
             </group>
          </tab>
