@@ -8,8 +8,9 @@ If you do not see a specific function you need, please contact EszopiCoder at ph
 ## Install Instructions:
 Before reading the following instructions, please read the [Privacy Policy](https://github.com/EszopiCoder/excel-rx-fx-library/wiki/Privacy-Policy) and [EULA](https://github.com/EszopiCoder/excel-rx-fx-library/wiki/EULA).
 1. To install, download 'RxFxLibrary Add-In 1.2.xlam'
-2. Click the 'Developer' tab, click 'Excel Add-ins'
-3. Click 'Browse...', and find the location of the file. The custom menu will be located under the 'Formulas' tab.
+2. Click the 'Developer' tab
+3. Click 'Excel Add-ins' button
+4. Click 'Browse...' button, and find the location of the file. The custom menu will be located under the 'Formulas' tab.
 
 If you are using this for clinical practice, please make sure you are using the correct units (metric vs US). All functions have been tested against multiple online calculators and hand calculations. Please use the functions at your own risk.
 
