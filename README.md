@@ -1,5 +1,10 @@
 # Excel Visual Basic for Applications Pharmacy Functions Library
 
+Custom pharmacy functions enabling a user to calculate patient metrics, lab values, and drug dosing. With the Pharmacy Function Library, you can perform commonly used clinical pharmacy calculations. See a full list of the functions below.
+
+
+If you do not see a specific function you need, please contact EszopiCoder at pharm.coder@gmail.com
+
 ## Install Instructions:
 Before reading the following instructions, please read the [Privacy Policy](https://github.com/EszopiCoder/excel-rx-fx-library/wiki/Privacy-Policy) and [EULA](https://github.com/EszopiCoder/excel-rx-fx-library/wiki/EULA).
 1. To install, download 'RxFxLibrary Add-In 1.2.xlam'
