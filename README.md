@@ -41,6 +41,12 @@ If you have any questions or find any bugs, please contact EszopiCoder at pharm.
 - Correction Factor Dosing
 - Carbohydrate Counting Dosing
 
+
+**Pediatrics**
+- Adjusted Age (Corrected Age)
+- Bedside-Schwartz eGFR
+
+
 **Kinetics (Coming soon!)**
 - Vancomycin dosing
 - Aminoglycoside dosing
