@@ -45,7 +45,7 @@ If you have any questions or find any bugs, please contact EszopiCoder at pharm.
 
 **Pediatrics**
 - Adjusted Age (Corrected Age)
-- Bedside-Schwartz eGFR
+- Estimated Glomerular Filtration Rate (eGFR); Bedside-Schwartz
 
 
 **Kinetics (Coming soon!)**
