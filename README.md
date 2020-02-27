@@ -29,13 +29,13 @@ If you have any questions or find any bugs, please contact EszopiCoder at pharm.
 - Body Surface Area (BSA); Du Bois and Mosteller
 - Ideal Body Weight (IBW); Devine
 - Adjusted Body Weight (AdjBW); Devine
-- Ideal Body Weight under 60 inches (IBW); Intuitive, Baseline, Hume
+- Lean Body Weight (LBW)
+- Ideal Body Weight under 60 inches (IBW); Baseline, BMI, Hume
 
 
 **Renal**
-- Cockcroft-Gault Creatinine Clearance
-- CKDEPI eGFR
-- MDRD eGFR
+- Creatinine Clearance (CrCl); Cockcroft-Gault 
+- Estimated Glomerular Filtration Rate (eGFR); CKDEPI and MDRD
 
 
 **Diabetes**
