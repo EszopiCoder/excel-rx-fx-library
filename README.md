@@ -34,7 +34,7 @@ If you have any questions or find any bugs, please contact EszopiCoder at pharm.
 
 
 **Renal**
-- Creatinine Clearance (CrCl); Cockcroft-Gault 
+- Creatinine Clearance (CrCl); Cockcroft-Gault and Salazar-Corcoran
 - Estimated Glomerular Filtration Rate (eGFR); CKDEPI and MDRD
 
 
