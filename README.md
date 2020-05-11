@@ -11,7 +11,7 @@ Documentation on all functions is located on the [wiki](https://github.com/Eszop
 
 If you do not see a specific function you need, please contact EszopiCoder at pharm.coder@gmail.com
 
-## Installation:
+## Installation
 Before reading the following instructions, please read the [Privacy Policy](https://github.com/EszopiCoder/excel-rx-fx-library/wiki/Privacy-Policy) and [EULA](https://github.com/EszopiCoder/excel-rx-fx-library/wiki/EULA).
 1. To install, download 'RxFxLibrary Add-In 1.5.xlam'
 2. Click the 'Developer' tab
@@ -50,3 +50,6 @@ Microsoft Excel 2010+
 **Kinetics (Coming soon!)**
 - Vancomycin dosing
 - Aminoglycoside dosing
+
+## Sample Images
+<img src="Images/RxFxLibraryMenu.PNG">
