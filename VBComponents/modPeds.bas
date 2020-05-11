@@ -7,7 +7,7 @@ Sub TestPeds()
 
 End Sub
 
-Public Function Rx_PEDS_AdjAge(ByVal Age As Integer, _
+Public Function Rx_PEDS_AdjAge(ByVal AgeMos As Integer, _
     ByVal GA As Integer) As Variant
 Attribute Rx_PEDS_AdjAge.VB_Description = "Calculate adjusted age or corrected age (AdjAge).\r\nFormula: AdjAge = Chronological Age - ((40 - GA) / 4)\r\nOutput: Adjusted Age (Corrected Age) [months]"
 Attribute Rx_PEDS_AdjAge.VB_ProcData.VB_Invoke_Func = " \n21"
@@ -15,19 +15,19 @@ Attribute Rx_PEDS_AdjAge.VB_ProcData.VB_Invoke_Func = " \n21"
     ' Based off of Adjusted Age (Corrected Age) formula
     '   AdjAge = Chronological Age - ((40 - GA) / 4)
     ' Input(s)
-    '   Age = Months
+    '   AgeMos = Months
     '   GA = Gestational age: Age from date of mother's first day of last menstrual period to date of birth in weeks.
     ' Output:
     '   Adjusted Age in months
 
-    Rx_PEDS_AdjAge = Age - ((40 - GA) / 4)
+    Rx_PEDS_AdjAge = AgeMos - ((40 - GA) / 4)
 
 End Function
 
 Public Function Rx_PEDS_GFR_BS(ByVal Height As String, _
     ByVal sCr As Single, _
     Optional ByVal Metric As Boolean = True) As Variant
-Attribute Rx_PEDS_GFR_BS.VB_Description = "Calculate GFR with Bedside-Schwartz formula (GFR).\r\nFormula: GFR = 0.413 × Height / sCr\r\nOutput: Adjusted Age (Corrected Age) [months]"
+Attribute Rx_PEDS_GFR_BS.VB_Description = "Calculate GFR with Bedside-Schwartz formula (GFR).\r\nFormula: GFR = 0.413 Ã— Height / sCr\r\nOutput: Adjusted Age (Corrected Age) [months]"
 Attribute Rx_PEDS_GFR_BS.VB_ProcData.VB_Invoke_Func = " \n21"
 
     ' Based off of Bedside-Schwartz formula
