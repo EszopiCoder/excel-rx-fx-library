@@ -78,7 +78,7 @@ Sub getHelp_Click(control As IRibbonControl)
     
     URL = "https://github.com/EszopiCoder/excel-rx-fx-library/wiki"
     
-    If MsgBox("You are leaving Microsoft Word to the following website: " & URL & _
+    If MsgBox("You are leaving Microsoft Excel to the following website: " & URL & _
     vbNewLine & vbNewLine & "Would you like to proceed?", _
     vbExclamation + vbYesNo) = vbNo Then Exit Sub
     
